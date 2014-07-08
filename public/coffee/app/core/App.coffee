@@ -8,6 +8,9 @@ define [
 
   App = new Backbone.Marionette.Application()
 
+  App.api = 
+    url: ''
+
   App.addRegions
     siteRegion: '.region-site'
     modalRegion: '.region-modal'
