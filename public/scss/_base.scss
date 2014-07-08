@@ -1,0 +1,20 @@
+a {
+  text-decoration: underline;
+  @include transition(color 0.2s ease);
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+textarea, input { 
+  outline: none;
+}
+
+// Bootstrap
+.container {
+  position: relative;
+}

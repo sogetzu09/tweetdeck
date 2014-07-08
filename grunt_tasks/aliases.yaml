@@ -1,0 +1,47 @@
+'server':
+  - 'clean:server'
+  - 'coffee:server'
+  - 'express:server'
+'server.dev':
+  - 'server'
+  - 'watch'
+'server.dist':
+  - 'clean:server.dist'
+  - 'server'
+  - 'copy:server.dist'
+
+'public':
+  - 'clean:public'
+  - 'copy:public'
+  - 'copy:public.bower'
+  - 'compass:public'
+  - 'jst:public'
+  - 'coffee:public'
+  - 'coffee:public.rjs'
+
+'public.dev':
+  - 'public'
+  - 'watch'
+
+'public.dist':
+  - 'clean:public.dist'
+  - 'public'
+  - 'requirejs:public'
+  - 'server'
+  - 'clean:public.distPRE'
+  - 'uglify:public'
+  - 'cssmin:public'
+  - 'imagemin:public'
+  - 'copy:public.dist'
+
+'dev':
+  - 'public'
+  - 'server'
+  - 'watch'
+
+'dist':
+  - 'public.dist'
+  - 'server.dist'
+
+'default':
+  - 'dev'

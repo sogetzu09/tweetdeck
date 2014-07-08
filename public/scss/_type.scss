@@ -1,0 +1,22 @@
+//-- Bootstrap override
+//----------------------------------------
+body {
+  font-weight: $font-weight;
+}
+
+//-- Custom
+//----------------------------------------
+.text-lg {
+  font-size: $font-size-large;
+}
+
+
+//-- Links variant
+//----------------------------------------
+a.link-inverted {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

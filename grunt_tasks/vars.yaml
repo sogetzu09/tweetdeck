@@ -1,0 +1,8 @@
+server:
+  dest: '.server/'
+  src: 'server/'
+  dist: 'dist/server/'
+public:
+  dest: '.public/'
+  src: 'public/'
+  dist: 'dist/public/'

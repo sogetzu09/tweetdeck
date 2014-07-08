@@ -1,0 +1,17 @@
+@mixin single-transition-transform($duration:1s, $function:ease, $delay:0) {
+  -webkit-transition: -webkit-transform $duration $function $delay;
+  -moz-transition: -moz-transform $duration $function $delay;
+  -o-transition: -o-transform $duration $function $delay;
+  transition: transform $duration $function $delay;
+}
+
+@mixin adjust-grid-gutter-width($gutter-width) {
+  .row {
+    margin-left: -$gutter-width*0.5;
+    margin-right: -$gutter-width*0.5;
+  }
+  [class*="col-"] {
+    padding-left: $gutter-width*0.5;
+    padding-right: $gutter-width*0.5;
+  }
+}
