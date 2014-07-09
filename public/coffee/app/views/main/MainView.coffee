@@ -22,21 +22,23 @@ define [
       pageRegion: '.section-page'
       footerRegion: '.section-footer'
 
-
-    # Render
-    # ------------------------------------------------------------
-    onShow: () ->
-      @headerRegion.show new HeaderView()
-      @footerRegion.show new FooterView()
-
-      @pageRegion.show new TweetDeckView
-        collection: new Backbone.Collection [
+    initialize: () ->
+      if !@collection?
+        @collection = new Backbone.Collection [
           screen_name: 'AppDirect'
         ,
           screen_name: 'laughingsquid'    
         ,
           screen_name: 'techcrunch'
         ]
+
+    # Render
+    # ------------------------------------------------------------
+    onShow: () ->
+      @headerRegion.show new HeaderView()
+      @footerRegion.show new FooterView()
+      @pageRegion.show new TweetDeckView
+        collection: @collection
 
 
     # Events

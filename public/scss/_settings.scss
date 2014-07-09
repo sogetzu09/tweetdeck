@@ -18,35 +18,17 @@ $icon-font-path: "../fonts/bootstrap/";
 //-----------------------------------------------------------
 // App
 //-----------------------------------------------------------
-$font-size-base-plus: 14px;
 $font-weight: 300;
 
 $layout-max-width: 1800px;
 
 
 $header-height: 50px;
-$footer-height: 50px;
+$footer-height: 30px;
 
 
 $bg-color-light: #fff;
 $bg-color-dark: #282d2d;
-
-
-
-// Bootstrap NEW BREAKPOINT
-// ----------------------------------------------------------
-
-// Default bootstrap values
-$screen-xs:                  480px !default;
-$screen-xs-min:              $screen-xs !default;
-
-/*
-  includes a new size breakpoint a 480px for tiny screens
-  Base on https://gist.github.com/baxang/9775806
-*/
-$screen-tn: 320px !default;
-$screen-tn-min: $screen-tn !default;
-$screen-tn-max: ($screen-xs-min - 1) !default;
 
 
 
@@ -67,11 +49,11 @@ $screen-tn-max: ($screen-xs-min - 1) !default;
 
 // Typography
 // -------------------------
-// $font-family-sans-serif: "Lato", sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
 // $font-size-base: 13px;
 // $font-size-large: 21px;
 
-// $headings-font-weight: 300;
+$headings-font-weight: 700;
 
 // Components
 // -------------------------
@@ -83,20 +65,3 @@ $screen-tn-max: ($screen-xs-min - 1) !default;
 // -------------------------
 
 // $btn-font-weight: 300;
-// $btn-primary-bg: $brand-primary-alt;
-// $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
-
-// $btn-default-color: $brand-primary-alt;
-// $btn-default-bg: $brand-primary-alt;
-// $btn-default-border: $brand-primary-alt;
-
-
-// Navs
-// -------------------------
-// $nav-link-hover-bg: none;
-
-// $nav-tabs-border-color: #ddd;
-// $nav-tabs-link-hover-border-color: transparent;
-// $nav-tabs-active-link-hover-bg: #ddd;
-// $nav-tabs-active-link-hover-border-color: #ddd;
-// $nav-tabs-justified-link-border-color: #ddd !default;

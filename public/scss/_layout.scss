@@ -46,6 +46,12 @@ body,
 }
 
 
+// Helpers 
+//--------------------------------------------
+.margin-p {
+  margin-bottom: ($line-height-computed / 2);
+}
+
 // Vertical alignment helpers 
 // only to be used on col-* 
 // http://stackoverflow.com/questions/1097006/removing-whitespace-between-html-elements-when-using-line-breaks

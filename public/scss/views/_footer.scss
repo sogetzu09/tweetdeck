@@ -1,12 +1,16 @@
 // Footer
 
 .section-footer {
-  background-color: #000;
+  background-color: #a8ccea;
+  // border-top: 1px solid rgba(0,0,0,0.3);
   bottom: 0;
-  color: rgba(255,255,255,0.3);
+  color: #000;
+  font-size: $font-size-small;
   height: $footer-height;
-  padding-bottom: $grid-gutter-width/2;
-  padding-top: $grid-gutter-width/2;
+  line-height: $footer-height;
   position: absolute;
-  width: 100%;
+  right: 0;
+  width: auto;
+  z-index: 100;
+  @include border-top-left-radius(5px);
 }
