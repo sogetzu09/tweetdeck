@@ -1,7 +1,26 @@
 <div class="tweet">
   <p><%= tweet.text %></p>
-  <p><%= tweet.created_at %></p>
-  <p>
-    <a href="<%= tweet_url %>">Details</a>
-  </p>
+  <div class="row margin-p">
+    <div class="col-xs-6">
+      <a href="<%= tweet_url %>">Details</a>
+    </div>
+    <div class="col-xs-6 text-right">
+      <%= timeago %> 
+    </div>
+  </div>
+  <div class="small margin-p">
+    <% if (reply != null) { %>
+      Reply: @<%= reply %><br />
+    <% } %>
+    <% if (retweet != null) { %>
+      Retweet: @<%= retweet %><br />
+    <% } %>
+    <% if ( (mentions != null) && mentions.length ) { %>
+      Mentions: 
+      <% _.each(mentions, function(mention, index){ %>
+        @<%= mention.screen_name %><% if (index<mentions.length-1) { print(', ') } %>
+      <% }) %>
+      <br />
+    <% } %>
+  </div>
 </div>

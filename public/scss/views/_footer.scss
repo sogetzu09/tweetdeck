@@ -3,8 +3,10 @@
 .section-footer {
   background-color: #000;
   bottom: 0;
-  color: #fff;
+  color: rgba(255,255,255,0.3);
   height: $footer-height;
+  padding-bottom: $grid-gutter-width/2;
+  padding-top: $grid-gutter-width/2;
   position: absolute;
   width: 100%;
 }

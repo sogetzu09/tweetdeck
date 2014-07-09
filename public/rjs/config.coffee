@@ -19,6 +19,7 @@ require.config
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/backbone.babysitter'
 
     'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap'
+    'moment': '../bower_components/moment/moment'
 
   shim:
     'backbone':

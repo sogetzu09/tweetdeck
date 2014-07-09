@@ -8,3 +8,7 @@ define [
 
   FooterView = Marionette.ItemView.extend
     template: FooterTemplate
+
+    templateHelpers: () ->
+      data = 
+        year: new Date().getFullYear()
