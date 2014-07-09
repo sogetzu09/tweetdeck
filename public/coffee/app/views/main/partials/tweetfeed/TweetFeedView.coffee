@@ -48,6 +48,7 @@ define [
     templateHelpers: () ->
       data = 
         screen_name: @options.screen_name
+        user_url: tweet_url = 'http://twitter.com/'+@options.screen_name
         active: (@options.index is 0)
 
     itemViewOptions: (model, index) ->

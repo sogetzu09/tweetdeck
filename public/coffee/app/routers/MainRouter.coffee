@@ -14,7 +14,7 @@ define [
   MainController = Marionette.Controller.extend
 
     getLayoutRegion: () ->
-      return App['siteRegion']
+      return App.siteRegion
 
     showLayout: () ->
       region = @getLayoutRegion()

@@ -14,3 +14,10 @@ a.link-inverted {
     text-decoration: underline;
   }
 }
+a.link-color {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
