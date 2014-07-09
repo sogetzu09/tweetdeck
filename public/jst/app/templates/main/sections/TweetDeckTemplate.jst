@@ -1,3 +1,15 @@
 <div class="tweetdeck col-xs-12">
+  <nav class="nav nav-feed">
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle" id="dropdownFeed" data-toggle="dropdown">
+        <span class="icon-angle-down"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownFeed">
+        <% _.each(feeds, function(feed){ %>
+          <li><a href="#" class="link-inverted" data-id="<%= feed.screen_name %>">@<%= feed.screen_name %></a></li>  
+        <% }) %>
+      </ul>
+    </div>
+  </nav>
   <div class="row list-tweetfeed"></div>
 </div>

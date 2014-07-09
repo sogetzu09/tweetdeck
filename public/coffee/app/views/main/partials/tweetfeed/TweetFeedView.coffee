@@ -14,7 +14,7 @@ define [
     template: TweetFeedTemplate
 
     itemView: TweetFeedListItemView
-    itemViewContainer: '.list-tweetfeed'
+    itemViewContainer: '.list-tweet'
 
     options:
       screen_name: 'techcrunch'
@@ -37,6 +37,7 @@ define [
     templateHelpers: () ->
       data = 
         screen_name: @options.screen_name
+        active: (@options.index is 0)
 
     itemViewOptions: (model, index) ->
       data =

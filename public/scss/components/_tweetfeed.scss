@@ -21,7 +21,7 @@
     }
   }
 
-  .list-tweetfeed{
+  .list-tweet{
     height: 100%;
     overflow-y: scroll;
     padding-top: 50px;
@@ -32,5 +32,12 @@
     border-top: 1px solid rgba(0,0,0,0.06);
     padding: 20px 0px 10px;
     overflow: hidden;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 }
