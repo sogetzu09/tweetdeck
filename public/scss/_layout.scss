@@ -12,19 +12,20 @@ body {
   max-width: $layout-max-width;
 }
 
-.section {
-  margin: 50px 0;
-  @media (max-width: $screen-xs-max) {
-    margin: 25px 0;
-  }
-}
+
+// .section {
+//   margin: 50px 0;
+//   @media (max-width: $screen-xs-max) {
+//     margin: 25px 0;
+//   }
+// }
 
 
-.section-page,
-.section-main,
-.section-aside {
-  margin-top: 0;
-}
+// .section-page,
+// .section-main,
+// .section-aside {
+//   margin-top: 0;
+// }
 
 
 // In order to push the footer down
@@ -44,20 +45,6 @@ body,
   position: relative
 }
 
-// Sticky footer layout alternative
-//------------------------------------------
-@media (min-width: $screen-sm-min) {
-  .layout-sticky-footer {
-    padding-bottom: $sticky-footer-height;
- 
-    .section-footer {
-      bottom: 0;
-      height: $sticky-footer-height;
-      position: absolute;
-      width: 100%;
-    }
-  }  
-}
 
 // Vertical alignment helpers 
 // only to be used on col-* 

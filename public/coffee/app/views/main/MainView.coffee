@@ -4,16 +4,14 @@ define [
   'app/templates/main/MainTemplate'
   'app/views/main/sections/HeaderView'
   'app/views/main/sections/FooterView'
-  'app/views/main/partials/tweetfeed/TweetFeedView'
-  'app/collections/TweetCollection'
+  'app/views/main/sections/TweetDeckView'
 ], (
   Marionette
   App
   MainTemplate
   HeaderView
   FooterView
-  TweetFeedView
-  TweetCollection
+  TweetDeckView
 ) ->
 
   MainView = Marionette.Layout.extend
@@ -31,9 +29,14 @@ define [
       @headerRegion.show new HeaderView()
       @footerRegion.show new FooterView()
 
-      @pageRegion.show new TweetFeedView
-        # collection: tweetCollection
-        screen_name: 'techcrunch'
+      @pageRegion.show new TweetDeckView
+        collection: new Backbone.Collection [
+          screen_name: 'AppDirect'
+        ,
+          screen_name: 'laughingsquid'    
+        ,
+          screen_name: 'techcrunch'
+        ]
 
 
     # Events

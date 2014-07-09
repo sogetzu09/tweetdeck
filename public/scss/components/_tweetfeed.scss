@@ -1,0 +1,28 @@
+.tweetfeed {
+  height: 100%;
+  position: relative;
+
+  .title {
+    height: 50px;
+    left: 0;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include background-image( 
+      linear-gradient(180deg, 
+        rgba(255,255,255,1) 80%,
+        rgba(255,255,255,0) 100%)
+    );
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  .list-tweetfeed{
+    height: 100%;
+    overflow-y: scroll;
+    padding-top: 50px;
+  }
+}

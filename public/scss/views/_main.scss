@@ -1,0 +1,14 @@
+// Main
+.layout-main {
+  height: 100%;
+
+  .section-page {
+    height: 100%;
+    padding-bottom: $footer-height;
+    padding-top: $header-height;
+    //since marionette adds an extra wrapper div when generating template
+    & > div { 
+      height: 100%;
+    }
+  }
+}

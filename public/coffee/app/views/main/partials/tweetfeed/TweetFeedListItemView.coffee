@@ -6,7 +6,7 @@ define [
   TweetFeedListItemTemplate
 ) ->
 
-  TweetFeedView = Marionette.Layout.extend
+  TweetFeedListItemView = Marionette.Layout.extend
     template: TweetFeedListItemTemplate
 
     # Render

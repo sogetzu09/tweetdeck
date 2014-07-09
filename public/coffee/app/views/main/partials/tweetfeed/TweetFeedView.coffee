@@ -31,10 +31,16 @@ define [
 
     # Render
     # --------------------------------
+    onRender: () ->
+      @setElement @$el.children()
+
+    templateHelpers: () ->
+      data = 
+        screen_name: @options.screen_name
+
     itemViewOptions: (model, index) ->
       data =
         index: index
-
 
     # Data
     # --------------------------------
