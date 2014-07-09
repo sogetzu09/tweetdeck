@@ -31,7 +31,6 @@
   - 'clean:public.distPRE'
   - 'uglify:public'
   - 'cssmin:public'
-  - 'imagemin:public'
   - 'copy:public.dist'
 
 'dev':
