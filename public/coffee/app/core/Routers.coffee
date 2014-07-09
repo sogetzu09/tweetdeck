@@ -41,9 +41,4 @@ define [
         App.commands.execute 'navigate', href
 
 
-  # bindSessionEvents = () ->
-  #   LocaleSessionModel.on 'change', () ->
-  #     window.location = window.location
-
-
   return App

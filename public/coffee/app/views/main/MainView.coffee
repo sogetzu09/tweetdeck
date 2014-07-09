@@ -1,13 +1,11 @@
 define [
   'backbone.marionette'
-  'app/core/App'
   'app/templates/main/MainTemplate'
   'app/views/main/sections/HeaderView'
   'app/views/main/sections/FooterView'
   'app/views/main/sections/TweetDeckView'
 ], (
   Marionette
-  App
   MainTemplate
   HeaderView
   FooterView
@@ -39,10 +37,3 @@ define [
       @footerRegion.show new FooterView()
       @pageRegion.show new TweetDeckView
         collection: @collection
-
-
-    # Events
-    # ------------------------------------------------------------
-    bindAppEvents: () ->
-      # App.channels.main.commands.setHandler 'main:section:scrollto', (id) =>
-      #   @onSectionScrollToCommand id

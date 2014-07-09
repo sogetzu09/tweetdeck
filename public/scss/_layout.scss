@@ -13,21 +13,6 @@ body {
 }
 
 
-// .section {
-//   margin: 50px 0;
-//   @media (max-width: $screen-xs-max) {
-//     margin: 25px 0;
-//   }
-// }
-
-
-// .section-page,
-// .section-main,
-// .section-aside {
-//   margin-top: 0;
-// }
-
-
 // In order to push the footer down
 //-------------------------------------------
 html,
@@ -50,26 +35,4 @@ body,
 //--------------------------------------------
 .margin-p {
   margin-bottom: ($line-height-computed / 2);
-}
-
-// Vertical alignment helpers 
-// only to be used on col-* 
-// http://stackoverflow.com/questions/1097006/removing-whitespace-between-html-elements-when-using-line-breaks
-// http://css-tricks.com/fighting-the-space-between-inline-block-elements/
-//--------------------------------------
-.vertical-top,
-.vertical-center,
-.vertical-bottom {
-  display: inline-block;
-  float: none;
-  margin-right: -4px;
-}
-.vertical-top {
-  vertical-align: top;
-}
-.vertical-center {
-  vertical-align: center;
-}
-.vertical-bottom {
-  vertical-align: bottom;
 }

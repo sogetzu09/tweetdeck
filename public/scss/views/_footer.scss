@@ -1,10 +1,8 @@
 // Footer
 
-.section-footer {
-  background-color: #a8ccea;
-  // border-top: 1px solid rgba(0,0,0,0.3);
+.section-footer-main {
+  background-color: $brand-primary;
   bottom: 0;
-  color: #000;
   font-size: $font-size-small;
   height: $footer-height;
   line-height: $footer-height;
@@ -12,5 +10,8 @@
   right: 0;
   width: auto;
   z-index: 100;
-  @include border-top-left-radius(5px);
+  @include border-top-left-radius($border-radius-base);
+  a {
+    color: $text-color;
+  }
 }

@@ -18,21 +18,32 @@ define [
 
     options:
       screen_name: 'techcrunch'
-      # result_type: 'recent'
       count: 30
+      showSpinnerOnRender: false
 
+    ui:
+      'spinner': '.icon-spinner'
 
     initialize: () ->
       if !@collection?
+        @options.showSpinnerOnRender = true
         @collection = new TweetCollection()
         @collection.fetch
           data: @getFetchDataQuery()
+          success: () =>
+            @hideSpinner()
+          error: () =>
+            @hideSpinner()
           
 
     # Render
     # --------------------------------
     onRender: () ->
       @setElement @$el.children()
+      if @options.showSpinnerOnRender
+        @showSpinner()
+      else
+        @hideSpinner()
 
     templateHelpers: () ->
       data = 
@@ -43,10 +54,18 @@ define [
       data =
         index: index
 
+
     # Data
     # --------------------------------
     getFetchDataQuery: () ->
       data =
         screen_name: @options.screen_name
-        # result_type: @options.result_type
         count: @options.count
+
+    # Spinner
+    # --------------------------------
+    showSpinner: () ->
+      @ui.spinner.removeClass 'hidden'
+    hideSpinner: () ->
+      @ui.spinner.addClass 'hidden'
+

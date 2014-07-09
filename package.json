@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "dotenv": "~0.2.4",
     "express": "~3.4.8",
     "fs-extra": "~0.8.1",
     "lodash": "~2.4.1",
